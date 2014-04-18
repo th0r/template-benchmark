@@ -1,21 +1,22 @@
 var data = require('./data');
 
-var count = 100000;
-var ect = require('./ect/ect.js');
-var ejs = require('./ejs/ejs.js');
-var ejsWithoutWith = require('./ejs-without-with/ejs.js');
+var count = 50000;
+//var ect = require('./ect/ect.js');
+//var ejs = require('./ejs/ejs.js');
+//var ejsWithoutWith = require('./ejs-without-with/ejs.js');
 var jade = require('./jade/jade.js');
 var jadeWithoutWith = require('./jade-without-with/jade.js');
-var eco = require('./eco/eco.js');
+//var eco = require('./eco/eco.js');
 var swig = require('./swig/swig.js');
-var hogan = require('./hogan/hogan.js');
-var dust = require('./dust/dust.js');
-var fest = require('./fest/fest.js');
+var nunjucks = require('./nunjucks/nunjucks.js');
+//var hogan = require('./hogan/hogan.js');
+//var dust = require('./dust/dust.js');
+//var fest = require('./fest/fest.js');
 var dot = require('./dot/dot.js');
-var handlebars = require('./handlebars/handlebars.js');
-var coffeekup = require('./coffeekup/coffeekup.js');
-var underscore = require('./underscore/underscore.js');
-var gaikan = require('./gaikan/gaikan.js');
+//var handlebars = require('./handlebars/handlebars.js');
+//var coffeekup = require('./coffeekup/coffeekup.js');
+//var underscore = require('./underscore/underscore.js');
+//var gaikan = require('./gaikan/gaikan.js');
 
 var test = function(name, sample, cb) {
 	var i = 0;
@@ -55,21 +56,22 @@ var testUnescaped = function(name, sample, cb) {
 
 var samples = [
 
-	{ name : 'Jade', sample : jade },
-	{ name : 'CoffeeKup', sample : coffeekup },
-	{ name : 'Jade without `with`', sample : jadeWithoutWith },
-	{ name : 'Handlebars.js', sample : handlebars },
-	{ name : 'EJS', sample : ejs },
-	{ name : 'Eco', sample : eco },
-	{ name : 'Underscore', sample : underscore },
-	{ name : 'Swig', sample : swig },
-	{ name : 'doT', sample : dot },
-	{ name : 'EJS without `with`', sample : ejsWithoutWith },
-	{ name : 'Fest', sample : fest },
-	{ name : 'Hogan.js', sample : hogan },
-	{ name : 'Dust', sample : dust },
-	{ name : 'Gaikan', sample: gaikan },
-	{ name : 'ECT', sample : ect },
+//	{ name : 'CoffeeKup', sample : coffeekup },
+//	{ name : 'Handlebars.js', sample : handlebars },
+//	{ name : 'EJS', sample : ejs },
+//	{ name : 'Eco', sample : eco },
+//	{ name : 'Underscore', sample : underscore },
+    { name : 'Nunjucks', sample : nunjucks },
+    { name : 'Swig', sample : swig },
+    { name: 'Jade without `with`', sample: jadeWithoutWith },
+    { name: 'Jade', sample: jade },
+    { name : 'doT', sample : dot }
+//	{ name : 'EJS without `with`', sample : ejsWithoutWith },
+//	{ name : 'Fest', sample : fest },
+//	{ name : 'Hogan.js', sample : hogan },
+//	{ name : 'Dust', sample : dust },
+//	{ name : 'Gaikan', sample: gaikan },
+//	{ name : 'ECT', sample : ect },
 ];
 
 var results = [];
