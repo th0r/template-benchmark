@@ -4,8 +4,8 @@
 
 - [doT](https://github.com/olado/doT) v1.0.2 ([website](http://olado.github.com/doT/))
 - [Jade](https://github.com/visionmedia/jade) v1.3.1 ([website](http://jade-lang.com/))
-- [Swig](https://github.com/paularmstrong/swig) v1.3.2
-- [Nunjucks](https://github.com/paularmstrong/swig) v1.3.2
+- [Swig](https://github.com/paularmstrong/swig) v1.3.2 ([website](http://paularmstrong.github.io/swig/))
+- [Nunjucks](https://github.com/paularmstrong/swig) v1.3.2 ([website](http://mozilla.github.io/nunjucks/))
 
 ## Results
 
